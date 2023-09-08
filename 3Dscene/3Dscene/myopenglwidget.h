@@ -5,12 +5,13 @@
 #include <QOpenGLWidget>
 #include <QPaintEvent>
 #include <QResizeEvent>
-#include <QOpenGLFunctions_3_3_Core>
+#include <QOpenGLFunctions>
+#include <QOpenGLTexture>
+#include <QtOpenGL>
 
-class myopenglWidget : public QOpenGLWidget,protected QOpenGLFunctions_3_3_Core
+class myopenglWidget : public QOpenGLWidget, protected QOpenGLFunctions
 {
     Q_OBJECT
-
 public:
     myopenglWidget(QWidget *parent = nullptr);
     ~myopenglWidget();

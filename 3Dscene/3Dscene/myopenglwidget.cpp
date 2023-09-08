@@ -3,9 +3,7 @@
 myopenglWidget::myopenglWidget(QWidget *parent)
     :QOpenGLWidget(parent)
 {
-    initializeGL();
-    resizeGL(100,100);
-    paintGL();
+
 }
 
 myopenglWidget::~myopenglWidget()
@@ -15,8 +13,7 @@ myopenglWidget::~myopenglWidget()
 void myopenglWidget::initializeGL()
 {
     initializeOpenGLFunctions();
-    // 设置背景颜色
-    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 }
 
 void myopenglWidget::resizeGL(int w, int h)
